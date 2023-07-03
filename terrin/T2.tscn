@@ -1,0 +1,244 @@
+[gd_scene load_steps=40 format=3 uid="uid://cgsfksy4vyyva"]
+
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="1_t3u1u"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/vertex_properties.gd" id="2_va21e"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point.gd" id="3_g6s48"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="4_cv2ui"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material.gd" id="5_gpmc8"]
+[ext_resource type="Texture2D" uid="uid://fe8kpy58blx0" path="res://resoures/2.png" id="6_bvd8l"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="7_qy3uu"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="8_3ctr2"]
+[ext_resource type="Texture2D" uid="uid://dd8eubvdjfc2c" path="res://resoures/TwT.png" id="9_5mpum"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="10_d2bpk"]
+
+[sub_resource type="Resource" id="Resource_jjmu6"]
+script = ExtResource("2_va21e")
+texture_idx = 26
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_kaxp7"]
+script = ExtResource("3_g6s48")
+position = Vector2(-0.00195122, 0.00111198)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_jjmu6")
+
+[sub_resource type="Resource" id="Resource_r02dl"]
+script = ExtResource("2_va21e")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_mtett"]
+script = ExtResource("3_g6s48")
+position = Vector2(2166.79, 611.454)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_r02dl")
+
+[sub_resource type="Resource" id="Resource_fr41o"]
+script = ExtResource("2_va21e")
+texture_idx = 3
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_btoar"]
+script = ExtResource("3_g6s48")
+position = Vector2(2165.8, -0.000427246)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_fr41o")
+
+[sub_resource type="Resource" id="Resource_t6ten"]
+script = ExtResource("2_va21e")
+texture_idx = 26
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_mt6wi"]
+script = ExtResource("3_g6s48")
+position = Vector2(-0.00195122, 0.00111198)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_t6ten")
+
+[sub_resource type="Resource" id="Resource_umr8l"]
+script = ExtResource("2_va21e")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_c7brk"]
+script = ExtResource("3_g6s48")
+position = Vector2(-1.14182, 613.978)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_umr8l")
+
+[sub_resource type="Resource" id="Resource_n6li6"]
+script = ExtResource("2_va21e")
+texture_idx = 13
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_5rxkq"]
+script = ExtResource("3_g6s48")
+position = Vector2(328.31, -157.779)
+point_in = Vector2(-132.071, 173.193)
+point_out = Vector2(186.495, -54.0786)
+properties = SubResource("Resource_n6li6")
+
+[sub_resource type="Resource" id="Resource_uga8o"]
+script = ExtResource("2_va21e")
+texture_idx = 4
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_ox8cb"]
+script = ExtResource("3_g6s48")
+position = Vector2(790.322, -405.13)
+point_in = Vector2(-149.671, -24.9452)
+point_out = Vector2(149.671, 24.9452)
+properties = SubResource("Resource_uga8o")
+
+[sub_resource type="Resource" id="Resource_exolg"]
+script = ExtResource("2_va21e")
+texture_idx = 2
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_idu2e"]
+script = ExtResource("3_g6s48")
+position = Vector2(1532.42, -62.5628)
+point_in = Vector2(-176.398, 51.6721)
+point_out = Vector2(197.78, -26.7269)
+properties = SubResource("Resource_exolg")
+
+[sub_resource type="Resource" id="Resource_8f8ji"]
+script = ExtResource("2_va21e")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_120g3"]
+script = ExtResource("3_g6s48")
+position = Vector2(569.521, -296.937)
+point_in = Vector2(-77.4207, 46.7194)
+point_out = Vector2(77.4207, -46.7194)
+properties = SubResource("Resource_8f8ji")
+
+[sub_resource type="Resource" id="Resource_jcboa"]
+script = ExtResource("2_va21e")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_e3iwp"]
+script = ExtResource("3_g6s48")
+position = Vector2(896.521, 97.5275)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_jcboa")
+
+[sub_resource type="Resource" id="Resource_cms2s"]
+script = ExtResource("2_va21e")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_10pmp"]
+script = ExtResource("3_g6s48")
+position = Vector2(1217.13, -22.2316)
+point_in = Vector2(-118.433, 125.992)
+point_out = Vector2(125.56, -92.1379)
+properties = SubResource("Resource_cms2s")
+
+[sub_resource type="Resource" id="Resource_xwu2l"]
+script = ExtResource("2_va21e")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_057gq"]
+script = ExtResource("3_g6s48")
+position = Vector2(1852.22, -20.4393)
+point_in = Vector2(-249.452, 3.56354)
+point_out = Vector2(133.635, 40.9814)
+properties = SubResource("Resource_xwu2l")
+
+[sub_resource type="Resource" id="Resource_ybus7"]
+script = ExtResource("4_cv2ui")
+_points = {
+0: SubResource("Resource_kaxp7"),
+1: SubResource("Resource_mtett"),
+2: SubResource("Resource_btoar"),
+3: SubResource("Resource_mt6wi"),
+4: SubResource("Resource_c7brk"),
+6: SubResource("Resource_5rxkq"),
+7: SubResource("Resource_ox8cb"),
+8: SubResource("Resource_idu2e"),
+9: SubResource("Resource_120g3"),
+56: SubResource("Resource_e3iwp"),
+57: SubResource("Resource_10pmp"),
+58: SubResource("Resource_057gq")
+}
+_point_order = Array[int]([3, 6, 9, 7, 56, 57, 8, 58, 2, 1, 4, 0])
+_constraints = {
+Array[int]([0, 3]): 15
+}
+_next_key = 64
+_material_overrides = {}
+
+[sub_resource type="Resource" id="Resource_b3i8u"]
+script = ExtResource("5_gpmc8")
+textures = Array[Texture2D]([ExtResource("6_bvd8l")])
+textures_corner_outer = Array[Texture2D]([])
+textures_corner_inner = Array[Texture2D]([])
+textures_taper_left = Array[Texture2D]([])
+textures_taper_right = Array[Texture2D]([])
+randomize_texture = false
+use_corner_texture = true
+use_taper_texture = true
+fit_mode = 0
+
+[sub_resource type="Resource" id="Resource_4bou2"]
+script = ExtResource("7_qy3uu")
+begin = 0.0
+distance = 360.0
+edgeRendering = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_ktych"]
+script = ExtResource("8_3ctr2")
+edge_material = SubResource("Resource_b3i8u")
+normal_range = SubResource("Resource_4bou2")
+weld = true
+render = true
+z_index = 0
+z_as_relative = true
+offset = 0.0
+
+[sub_resource type="Resource" id="Resource_p7cwv"]
+script = ExtResource("10_d2bpk")
+_edge_meta_materials = Array[ExtResource("8_3ctr2")]([SubResource("Resource_ktych")])
+fill_textures = Array[Texture2D]([ExtResource("9_5mpum")])
+fill_texture_z_index = -10
+fill_texture_show_behind_parent = false
+fill_mesh_offset = 0.0
+render_offset = 0.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
+texture_repeat = 2
+script = ExtResource("1_t3u1u")
+_points = SubResource("Resource_ybus7")
+shape_material = SubResource("Resource_p7cwv")
+collision_polygon_node_path = NodePath("../CollisionPolygon2D")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+modulate = Color(1, 1, 1, 0.3)
+polygon = PackedVector2Array(-0.104508, -0.100704, 32.7243, -0.29735, 69.0545, -4.25595, 114.627, -13.9424, 166.391, -31.7468, 193.641, -44.4403, 221.294, -60.0604, 248.968, -78.9055, 276.284, -101.275, 302.858, -127.466, 328.299, -157.795, 389.043, -177.369, 433.789, -195.768, 466.172, -213.257, 489.818, -230.119, 525.396, -263.089, 544.577, -279.763, 569.521, -296.937, 583.115, -306.126, 595.098, -316.023, 615.636, -337.06, 652.827, -377.908, 663.364, -386.574, 675.099, -394.179, 688.383, -400.501, 703.567, -405.319, 721.001, -408.413, 741.038, -409.56, 764.028, -408.539, 790.322, -405.13, 797.198, -403.633, 803.795, -401.493, 810.121, -398.733, 816.18, -395.374, 821.978, -391.437, 827.52, -386.943, 832.811, -381.913, 837.858, -376.369, 847.237, -363.825, 855.702, -349.479, 863.294, -333.502, 870.058, -316.066, 881.275, -277.493, 889.698, -235.124, 899.549, -144.447, 896.628, 97.4176, 929.962, 96.5324, 966.737, 92.8552, 1012.42, 84.8944, 1063.64, 71.0277, 1117.07, 49.633, 1143.57, 35.6056, 1169.35, 19.0873, 1194.02, -0.124315, 1217.13, -22.233, 1239.43, -37.3012, 1259.5, -48.2996, 1277.74, -55.741, 1294.56, -60.1388, 1310.37, -62.0069, 1325.56, -61.8595, 1355.71, -57.572, 1388.25, -51.3889, 1426.39, -47.4196, 1448.58, -47.5491, 1473.37, -49.7738, 1501.19, -54.6072, 1532.42, -62.5643, 1592.71, -68.2807, 1614, -68.2953, 1630.75, -66.7562, 1643.99, -63.9194, 1654.75, -60.0416, 1672.94, -50.1874, 1693.56, -39.2495, 1707.34, -34.0139, 1724.82, -29.2767, 1747.02, -25.2941, 1774.97, -22.3228, 1852.22, -20.4422, 1904.06, -7.7955, 1957.59, 0.0427115, 2059.12, 5.14753, 2165.91, -0.11268, 2166.9, 611.558, -1.24575, 614.082)

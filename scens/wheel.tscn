@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu38bsc0bsiyg"]
+
+[ext_resource type="Texture2D" uid="uid://dxkdr2mti24ra" path="res://Jeep_2/Tire.png" id="1_6vccu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uttal"]
+
+[node name="wheel" type="RigidBody2D" groups=["wheel"]]
+
+[node name="tire" type="Sprite2D" parent="."]
+scale = Vector2(0.73, 0.73)
+texture = ExtResource("1_6vccu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uttal")

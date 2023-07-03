@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://f7ro14yv4d2r"]
+
+[ext_resource type="PackedScene" uid="uid://c7yqiq5afqjiv" path="res://scens/Car.tscn" id="1_e661s"]
+
+[node name="Lvl1" type="Node2D"]
+position = Vector2(14, 34)
+
+[node name="Player" parent="." instance=ExtResource("1_e661s")]
+position = Vector2(-1022, -477)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-102, -62)
+position_smoothing_enabled = true
+position_smoothing_speed = 4.0

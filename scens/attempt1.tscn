@@ -1,0 +1,72 @@
+[gd_scene load_steps=9 format=3 uid="uid://cmwhkbg1tn715"]
+
+[ext_resource type="Script" path="res://scripts/proGEn.gd" id="1_ijbv2"]
+[ext_resource type="PackedScene" uid="uid://c7yqiq5afqjiv" path="res://scens/Car.tscn" id="2_0qmu3"]
+[ext_resource type="Texture2D" uid="uid://ivo3m4ob570k" path="res://resoures/bac31.png" id="3_e2xtm"]
+[ext_resource type="Texture2D" uid="uid://c6nn6aqtm42cq" path="res://resoures/Par2.png" id="3_nojhk"]
+[ext_resource type="Texture2D" uid="uid://b0hivlwa5qcx4" path="res://resoures/Clouds1.png" id="4_m0s1r"]
+[ext_resource type="Texture2D" uid="uid://dvtuggn4d33y5" path="res://resoures/Par1.png" id="4_uorxi"]
+[ext_resource type="Texture2D" uid="uid://c1pldd3mx0evg" path="res://resoures/clouds2.png" id="6_nsd7j"]
+[ext_resource type="PackedScene" uid="uid://b641imayg31rs" path="res://scens/Car2.tscn" id="8_e8c7o"]
+
+[node name="terrain" type="Node"]
+script = ExtResource("1_ijbv2")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(3, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_0qmu3")]
+position = Vector2(390, -279)
+gravity_scale = 0.6
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1868, 284)
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(24, -80)
+texture = ExtResource("3_e2xtm")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1871, 350)
+motion_scale = Vector2(0.4, 0.4)
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+texture = ExtResource("4_m0s1r")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1869, 237)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("3_nojhk")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(2061, 308)
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource("6_nsd7j")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(1869, 224)
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("4_uorxi")
+
+[node name="Player2" parent="." instance=ExtResource("8_e8c7o")]
+position = Vector2(208, -283)
+
+[node name="Camera2D" type="Camera2D" parent="Player2"]
+position = Vector2(182, 4)
+position_smoothing_enabled = true

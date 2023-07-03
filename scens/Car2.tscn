@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://b641imayg31rs"]
+
+[ext_resource type="Script" path="res://scripts/car2.gd" id="1_v4t8x"]
+[ext_resource type="Texture2D" uid="uid://bq5an1vtowu12" path="res://Jeep_1/car2.png" id="2_warl1"]
+[ext_resource type="PackedScene" uid="uid://dp7ouwj3i4sk" path="res://scens/wheel2.tscn" id="3_f37kk"]
+
+[node name="Player" type="RigidBody2D"]
+mass = 8.0
+script = ExtResource("1_v4t8x")
+
+[node name="Car" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+skew = 0.0296706
+texture = ExtResource("2_warl1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(2, 0)
+scale = Vector2(0.724, 0.724)
+polygon = PackedVector2Array(-49.8392, -12.8617, -25.7235, -12.8617, -20.9003, -8.03859, -16.0772, -20.9003, 20.9003, -22.508, 32.1543, -1.60772, 54.6624, 4.82315, 67.5241, 6.43087, 75.5627, 9.6463, 78.7781, 20.9003, 75.5627, 32.1543, 69.1318, 33.7621, 62.701, 25.7235, 57.8778, 22.508, 53.0547, 20.9003, 46.6238, 20.9003, 40.1929, 22.508, 35.3698, 25.7235, 30.5466, 30.5466, 27.6243, 34.5304, 20.7182, 38.674, -22.0994, 37.2928, -29.0055, 35.9116, -32.1543, 30.5466, -35.3698, 25.7235, -41.8006, 20.9003, -51.4469, 19.2926, -59.4855, 20.9003, -64.3087, 25.7235, -67.5241, 30.5466, -69.0608, 35.9116, -72.3473, 40.1929, -75.5627, 40.1929, -75.5627, 30.5466, -83.6013, 28.9389, -83.6013, 4.82315, -80.3859, 3.21543, -72.3473, 3.21543, -70.7396, 4.82315, -65.9164, 4.82315, -59.4855, -3.21543, -53.0547, -4.82315)
+
+[node name="wheelholder1" type="PinJoint2D" parent="."]
+position = Vector2(37, 34)
+node_a = NodePath("..")
+node_b = NodePath("Wheel")
+softness = 0.8
+
+[node name="Wheel" parent="wheelholder1" instance=ExtResource("3_f37kk")]
+mass = 3.0
+
+[node name="wheelholder2" type="PinJoint2D" parent="."]
+position = Vector2(-34, 34)
+node_a = NodePath("..")
+node_b = NodePath("Wheel")
+softness = 0.8
+
+[node name="Wheel" parent="wheelholder2" instance=ExtResource("3_f37kk")]
+mass = 3.0

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmtvm6c8es8du"]
+
+[ext_resource type="PackedScene" uid="uid://b641imayg31rs" path="res://scens/Car2.tscn" id="1_e5n7t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uudpy"]
+size = Vector2(3703.5, 132)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(-118, 162)
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(1530.25, 398)
+shape = SubResource("RectangleShape2D_uudpy")
+
+[node name="Player" parent="." instance=ExtResource("1_e5n7t")]
+position = Vector2(0, 103)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-8, -6)
+position_smoothing_enabled = true

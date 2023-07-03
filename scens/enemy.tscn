@@ -1,0 +1,144 @@
+[gd_scene load_steps=21 format=3 uid="uid://bh2umj6t6ub4q"]
+
+[ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_q5eb6"]
+[ext_resource type="Texture2D" uid="uid://cufsej1bxlskr" path="res://resoures/Sprite Sheet - Red Idle.png" id="2_wy4cs"]
+[ext_resource type="Texture2D" uid="uid://cxvet1gi3rpep" path="res://resoures/Sprite Sheet - Red Death.png" id="3_10rex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6i3c"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(0, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15n04"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(96, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wrme2"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(192, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vp1nc"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(288, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4adr8"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(384, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vowrd"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(480, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sx33"]
+atlas = ExtResource("2_wy4cs")
+region = Rect2(576, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6no36"]
+atlas = ExtResource("3_10rex")
+region = Rect2(0, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mrbgx"]
+atlas = ExtResource("3_10rex")
+region = Rect2(96, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_533a6"]
+atlas = ExtResource("3_10rex")
+region = Rect2(192, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_simpa"]
+atlas = ExtResource("3_10rex")
+region = Rect2(288, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sm208"]
+atlas = ExtResource("3_10rex")
+region = Rect2(384, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mt1s4"]
+atlas = ExtResource("3_10rex")
+region = Rect2(480, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18i06"]
+atlas = ExtResource("3_10rex")
+region = Rect2(576, 0, 96, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6v8c5"]
+atlas = ExtResource("3_10rex")
+region = Rect2(672, 0, 96, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ub8fw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6i3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15n04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wrme2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vp1nc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4adr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vowrd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sx33")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6no36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mrbgx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_533a6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_simpa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sm208")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mt1s4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18i06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6v8c5")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bjf2k"]
+radius = 8.0
+height = 25.3767
+
+[node name="Enemy" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_q5eb6")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+scale = Vector2(0.7, 0.7)
+mass = 0.08
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D"]
+sprite_frames = SubResource("SpriteFrames_ub8fw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(0, 5.6)
+rotation = 1.5708
+scale = Vector2(1.261, 1.261)
+shape = SubResource("CapsuleShape2D_bjf2k")
